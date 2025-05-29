@@ -1,9 +1,17 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import LandingPage from "./pages/public/landing-page";
+import NotFoundPage from "./pages/public/not-found-page";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <LandingPage />,
+    errorElement: <NotFoundPage />,
+  },
+]);
+
 const App = () => {
-  return (
-    <div className="w-dvw h-dvh flex flex-col justify-center items-center gap-10">
-      <h1 className="text-4xl">App</h1>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;
