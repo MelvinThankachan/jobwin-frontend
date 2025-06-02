@@ -15,7 +15,7 @@ const router = createBrowserRouter([
 const App = () => {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <div className="absolute bottom-4 right-4">
+      <div className="fixed bottom-4 right-4">
         <ThemeToggleSwitch />
       </div>
       <RouterProvider router={router} />
