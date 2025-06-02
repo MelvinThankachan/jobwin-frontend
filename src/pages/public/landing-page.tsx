@@ -1,7 +1,9 @@
+import MainNavBar from "@/components/shared/main-nav-bar";
+
 const LandingPage = () => {
   return (
-    <div className="flex justify-center items-center text-4xl font-bold h-dvh">
-      LandingPage
+    <div className="">
+      <MainNavBar />
     </div>
   );
 };
