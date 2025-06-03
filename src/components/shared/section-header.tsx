@@ -15,7 +15,8 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
   return (
     <div className="flex items-center justify-between">
       <h1 className="text-6xl font-semibold font-clash">
-        {mainTitle} <span className="text-sky-500">{highlightedText}</span>
+        {mainTitle} &nbsp;
+        <span className="text-sky-500">{highlightedText}</span>
       </h1>
       <Button variant="link" size="lg">
         {actionLabel} <ArrowRight className="size-7" />

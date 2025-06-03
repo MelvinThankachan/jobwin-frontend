@@ -1,7 +1,9 @@
 import CategoriesSection from "@/components/shared/categories-section";
 import FeaturedCompaniesSection from "@/components/shared/featured-companies-section";
 import FeaturedJobsSection from "@/components/shared/featured-jobs-section";
+import FooterSection from "@/components/shared/footer-section";
 import HeroSection from "@/components/shared/hero-secion";
+import LatestJobsSection from "@/components/shared/latest-jobs-section";
 import MainNavBar from "@/components/shared/main-nav-bar";
 
 const LandingPage = () => {
@@ -12,9 +14,11 @@ const LandingPage = () => {
       <FeaturedCompaniesSection />
       <CategoriesSection />
       <FeaturedJobsSection />
-      <div className="flex items-center justify-center text-9xl font-bold font-clash h-96">
+      <LatestJobsSection />
+      <FooterSection />
+      {/* <div className="flex items-center justify-center text-9xl font-bold font-clash h-96">
         Melvin Thankachan
-      </div>
+      </div> */}
     </div>
   );
 };

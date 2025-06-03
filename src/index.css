@@ -198,4 +198,8 @@
   .category-card-icon {
     @apply w-14 h-14 text-primary group-hover:text-primary-foreground;
   }
+
+  .footer-link {
+    @apply hover:underline hover:cursor-pointer;
+  }
 }
