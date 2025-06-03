@@ -5,7 +5,7 @@ import JobwinLogo from "./jobwin-logo";
 
 const MainNavBar = () => {
   return (
-    <header className="container flex bg-red- mx-auto py-5 justify-between">
+    <header className="container flex  mx-auto py-5 justify-between">
       <div className="flex gap-10 items-center">
         <JobwinLogo />
         <div className="flex gap-5">

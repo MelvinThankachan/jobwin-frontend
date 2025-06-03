@@ -4,7 +4,7 @@ import HeroSearchBar from "./hero-search-bar";
 const HeroSection = () => {
   return (
     <div className="w-full">
-      <div className="container bg--400 mx-auto py-10 flex flex-col gap-10">
+      <div className="section-container">
         <div className="text-8xl font-semibold font-clash max-w-[10ch] flex flex-col gap-5">
           <h1 className="">Discover more than</h1>
           <span className="text-sky-500 w-fit flex flex-col">

@@ -190,4 +190,12 @@
   body {
     @apply bg-background text-foreground text-xl;
   }
+
+  .section-container {
+    @apply container py-10 mx-auto flex flex-col gap-10;
+  }
+
+  .category-card-icon {
+    @apply w-14 h-14 text-primary group-hover:text-primary-foreground;
+  }
 }
