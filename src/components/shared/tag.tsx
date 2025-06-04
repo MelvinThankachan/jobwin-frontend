@@ -20,7 +20,7 @@ const COLOR_MAP = {
   pink: { bgColor: "bg-pink-100", textColor: "text-pink-700" },
   rose: { bgColor: "bg-rose-100", textColor: "text-rose-700" },
   neutral: { bgColor: "bg-neutral-100", textColor: "text-neutral-700" },
-  white: { bgColor: "bg-white/10", textColor: "text-white" },
+//   white: { bgColor: "bg-white/10", textColor: "text-white" },
 };
 
 const ALLOWED_COLORS = Object.keys(COLOR_MAP) as (keyof typeof COLOR_MAP)[];

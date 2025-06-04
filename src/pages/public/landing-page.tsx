@@ -1,25 +1,23 @@
 import CategoriesSection from "@/components/shared/categories-section";
 import FeaturedCompaniesSection from "@/components/shared/featured-companies-section";
 import FeaturedJobsSection from "@/components/shared/featured-jobs-section";
-import FooterSection from "@/components/shared/footer-section";
-import HeroSection from "@/components/shared/hero-secion";
+import HeroSection from "@/components/shared/hero-section";
 import LatestJobsSection from "@/components/shared/latest-jobs-section";
-import MainNavBar from "@/components/shared/main-nav-bar";
 
 const LandingPage = () => {
   return (
-    <div className="flex flex-col gap-10">
-      <MainNavBar />
-      <HeroSection />
+    <>
+      <HeroSection
+        mainTitle="Discover more than"
+        highlightedText="5000+ Jobs"
+        description="Great platform for the job seeker that searching for new career
+          heights and passionate about startups."
+      />
       <FeaturedCompaniesSection />
       <CategoriesSection />
       <FeaturedJobsSection />
       <LatestJobsSection />
-      <FooterSection />
-      {/* <div className="flex items-center justify-center text-9xl font-bold font-clash h-96">
-        Melvin Thankachan
-      </div> */}
-    </div>
+    </>
   );
 };
 

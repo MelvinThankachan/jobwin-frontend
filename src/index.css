@@ -192,7 +192,7 @@
   }
 
   .section-container {
-    @apply container py-10 mx-auto flex flex-col gap-10;
+    @apply container py-10 px-5 mx-auto flex flex-col gap-10;
   }
 
   .category-card-icon {
@@ -201,5 +201,14 @@
 
   .footer-link {
     @apply hover:underline hover:cursor-pointer;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
