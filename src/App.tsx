@@ -6,6 +6,7 @@ import { ThemeToggleSwitch } from "./components/shared/theme-toggle-switch";
 import PublicPageLayout from "./pages/public/public-page-layout";
 import FindJobsPage from "./pages/public/find-jobs-page";
 import BrowseCompaniesPage from "./pages/public/browse-companies-page";
+import TestPage from "./pages/test-page";
 
 const router = createBrowserRouter([
   {
@@ -28,12 +29,16 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "/test",
+    element: <TestPage />,
+  },
 ]);
 
 const App = () => {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <div className="fixed bottom-4 right-4">
+      <div className="fixed bottom-4 right-4 z-50">
         <ThemeToggleSwitch />
       </div>
       <RouterProvider router={router} />
